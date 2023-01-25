@@ -84,7 +84,7 @@ def is_notebook():
 
 def is_kaggle():
     # Is environment a Kaggle Notebook?
-    return os.environ.get('PWD') == '/kaggle/working' and os.environ.get('KAGGLE_URL_BASE') == 'https://www.kaggle.com'
+    return os.environ.get('PWD') == '/kaggle/input' and os.environ.get('KAGGLE_URL_BASE') == 'https://www.kaggle.com'
 
 
 def is_docker() -> bool:
